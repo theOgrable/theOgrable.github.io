@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+   <Document>
+
+      <Style id="CompleteStyle">
+          <BalloonStyle>
+              <text>
+                  <![CDATA[
+                      <b><center>$[vesselname]</center></b>
+                      <hr/>
+                      <table style="font-size:10px;" width="280px">
+                          <tr>
+                              <td>
+                                  <img alt="" src="../assets/googleEarth/IconBoat.png" />
+                  			</td>
+                  			<td align="left">
+                                  <div>$[mmsi]</div>
+                                  <div>$[callsign]</div>
+                                  <div>$[imo]</div>
+                                  <div>$[type]</div>
+                                  <div>$[navigationstatus]</div>
+                              </td>
+              		    </tr>
+                          <tr>
+                   	        <td>
+                                  <img alt="" src="../assets/googleEarth/IconClock.png" />
+			                    </td>
+     						    <td align="left">
+                                  $[time]
+                              </td>
+                          </tr>
+                          <tr>
+                   	        <td>
+                                   <img alt="" src="../Assets/googleEarth/IconGlobe.png">
+			                    </td>
+     						    <td align="left">
+                                  <div>$[Lat]</div>
+                                  <div>$[Lon]</div>
+                              </td>
+                          </tr>
+                          <tr>
+                              <td>
+                                  <img alt="" src="../assets/googleEarth/IconSpeed.png" />
+                              </td>
+                              <td align="left">
+                                  <div>$[speedkmh]kmh ($[speedknot]knot)</div>
+                                  <div>$[cog]</div>
+			                    </td>
+                          </tr>
+                          <tr>
+                              <td>
+				                    <img alt="" src="../assets/googleEarth/IconDim.png" />
+                              </td>
+                              <td align="left">
+                                  <div>$[dbow]m</div>
+                                  <div>$[dstern]m</div>
+                                  <div>$[dport]m</div>
+                                  <div>$[dstardboard]m</div>
+                              </td>
+                          </tr>
+                          <tr>
+                              <td>
+                                  <img alt="" src="../assets/googleEarth/IconAnchor.png" />
+                              </td>
+                              <td align="left">
+                                  <div>$[destination]</div>
+                                  <div>$[eta]</div>
+                                  <div>$[draught]m</div>
+                              </td>
+                          </tr>
+                          <tr>
+                              <td>
+                                  <img alt="" src="../assets/googleEarth/IconEpfs.png" />
+                              </td>
+                              <td align="left">
+                                  <div>$[epfs]</div>
+                                  <div>$[class]</div>
+                                  <div>$[servicetype]</div>
+                                  <div>$[serviceprovider]</div>
+                              </td>
+                          </tr>
+                          <tr>
+                              <td align="center" colspan="2">
+                                  <hr/>
+                                  GLOBEINFOS Tracking server
+                              </td>
+                          </tr>
+                      </table>
+                  ]]>
+              </text>
+          </BalloonStyle>
+      </Style>
+      <Style id="SimpleStyle">
+          <BalloonStyle>
+              <text>
+                  <![CDATA[
+                      <b><center>$[vesselname]</center></b>
+                      <hr/>
+                      <table style="font-size:10px;" width="280px">
+                          <tr>
+                              <td>
+                                  <img alt="" src="../assets/googleEarth/IconBoat.png" />
+                  			</td>
+                  			<td align="left">
+                                  <div>$[mmsi]</div>
+                                  <div>$[callsign]</div>
+                                  <div>$[imo]</div>
+                                  <div>$[type]</div>
+                                  <div>$[navigationstatus]</div>
+                              </td>
+              		    </tr>
+                          <tr>
+                   	        <td>
+                                  <img alt="" src="../assets/googleEarth/IconClock.png" />
+			                    </td>
+     						    <td align="left">
+                                  $[time]
+                              </td>
+                          </tr>
+                          <tr>
+                   	        <td>
+                                   <img alt="" src="../Assets/googleEarth/IconGlobe.png">
+			                    </td>
+     						    <td align="left">
+                                  <div>$[Lat]</div>
+                                  <div>$[Lon]</div>
+                              </td>
+                          </tr>
+                          <tr>
+                              <td>
+                                  <img alt="" src="../assets/googleEarth/IconSpeed.png" />
+                              </td>
+                              <td align="left">
+                                  <div>$[speedkmh]kmh ($[speedknot]knot)</div>
+                                  <div>$[cog]</div>
+			                    </td>
+                          </tr>
+                          <tr>
+                              <td>
+                                  <img alt="" src="../assets/googleEarth/IconAnchor.png" />
+                              </td>
+                              <td align="left">
+                                  <div>$[destination]</div>
+                                  <div>$[eta]</div>
+                                  <div>$[draught]m</div>
+                              </td>
+                          </tr>
+                          <tr>
+                              <td align="center" colspan="2">
+                                  <hr/>
+                                  GLOBEINFOS Tracking server
+                              </td>
+                          </tr>
+                      </table>
+                  ]]>
+              </text>
+          </BalloonStyle>
+      </Style>
+      <Style id="StyleWithoutDim">
+          <BalloonStyle>
+              <text>
+                  <![CDATA[
+                      <b><center>$[vesselname]</center></b>
+                      <hr/>
+                      <table style="font-size:10px;" width="280px">
+                          <tr>
+                              <td>
+                                  <img alt="" src="../assets/googleEarth/IconBoat.png" />
+                  			</td>
+                  			<td align="left">
+                                  <div>$[mmsi]</div>
+                                  <div>$[callsign]</div>
+                                  <div>$[imo]</div>
+                                  <div>$[type]</div>
+                                  <div>$[navigationstatus]</div>
+                              </td>
+              		    </tr>
+                          <tr>
+                   	        <td>
+                                  <img alt="" src="../assets/googleEarth/IconClock.png" />
+			                    </td>
+     						    <td align="left">
+                                  $[time]
+                              </td>
+                          </tr>
+                          <tr>
+                   	        <td>
+                                   <img alt="" src="../Assets/googleEarth/IconGlobe.png">
+			                    </td>
+     						    <td align="left">
+                                  <div>$[Lat]</div>
+                                  <div>$[Lon]</div>
+                              </td>
+                          </tr>
+                          <tr>
+                              <td>
+                                  <img alt="" src="../assets/googleEarth/IconSpeed.png" />
+                              </td>
+                              <td align="left">
+                                  <div>$[speedkmh]kmh ($[speedknot]knot)</div>
+                                  <div>$[cog]</div>
+			                    </td>
+                          </tr>
+                          <tr>
+                              <td>
+                                  <img alt="" src="../assets/googleEarth/IconAnchor.png" />
+                              </td>
+                              <td align="left">
+                                  <div>$[destination]</div>
+                                  <div>$[eta]</div>
+                                  <div>$[draught]m</div>
+                              </td>
+                          </tr>
+                          <tr>
+                              <td>
+                                  <img alt="" src="../assets/googleEarth/IconEpfs.png" />
+                              </td>
+                              <td align="left">
+                                  <div>$[epfs]</div>
+                                  <div>$[class]</div>
+                                  <div>$[servicetype]</div>
+                                  <div>$[serviceprovider]</div>
+                              </td>
+                          </tr>
+                          <tr>
+                              <td align="center" colspan="2">
+                                  <hr/>
+                                  GLOBEINFOS Tracking server
+                              </td>
+                          </tr>
+                      </table>
+                  ]]>
+              </text>
+          </BalloonStyle>
+      </Style>
+      <Style id="StyleWithoutEPFS">
+          <BalloonStyle>
+              <text>
+                  <![CDATA[
+                      <b><center>$[vesselname]</center></b>
+                      <hr/>
+                      <table style="font-size:10px;" width="280px">
+                          <tr>
+                              <td>
+                                  <img alt="" src="../assets/googleEarth/IconBoat.png" />
+                  			</td>
+                  			<td align="left">
+                                  <div>$[mmsi]</div>
+                                  <div>$[callsign]</div>
+                                  <div>$[imo]</div>
+                                  <div>$[type]</div>
+                                  <div>$[navigationstatus]</div>
+                              </td>
+              		    </tr>
+                          <tr>
+                   	        <td>
+                                  <img alt="" src="../assets/googleEarth/IconClock.png" />
+			                    </td>
+     						    <td align="left">
+                                  $[time]
+                              </td>
+                          </tr>
+                          <tr>
+                   	        <td>
+                                   <img alt="" src="../Assets/googleEarth/IconGlobe.png">
+			                    </td>
+     						    <td align="left">
+                                  <div>$[Lat]</div>
+                                  <div>$[Lon]</div>
+                              </td>
+                          </tr>
+                          <tr>
+                              <td>
+                                  <img alt="" src="../assets/googleEarth/IconSpeed.png" />
+                              </td>
+                              <td align="left">
+                                  <div>$[speedkmh]kmh ($[speedknot]knot)</div>
+                                  <div>$[cog]</div>
+			                    </td>
+                          </tr>
+                          <tr>
+                              <td>
+				                    <img alt="" src="../assets/googleEarth/IconDim.png" />
+                              </td>
+                              <td align="left">
+                                  <div>$[dbow]m</div>
+                                  <div>$[dstern]m</div>
+                                  <div>$[dport]m</div>
+                                  <div>$[dstardboard]m</div>
+                              </td>
+                          </tr>
+                          <tr>
+                              <td>
+                                  <img alt="" src="../assets/googleEarth/IconAnchor.png" />
+                              </td>
+                              <td align="left">
+                                  <div>$[destination]</div>
+                                  <div>$[eta]</div>
+                                  <div>$[draught]m</div>
+                              </td>
+                          </tr>
+                          <tr>
+                              <td align="center" colspan="2">
+                                  <hr/>
+                                  GLOBEINFOS Tracking server
+                              </td>
+                          </tr>
+                      </table>
+                  ]]>
+              </text>
+          </BalloonStyle>
+      </Style>
+	</Document>
+</kml>
