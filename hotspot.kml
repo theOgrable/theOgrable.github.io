@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+    <Document>
+        <name>GlobeInfos</name>
+        <Style id="TraceLine">
+            <LineStyle>
+                <color>ff00eaff</color>
+                <width>1.5</width>
+            </LineStyle>
+        </Style>
+        <Style id="Circle">
+            <LineStyle>
+                <color>ffffff00</color>
+                <width>1.5</width>
+            </LineStyle>
+        </Style>
+        <Folder>
+            <name>Mobiles</name>
+            <Folder>
+                <name>test</name>
+                <Folder>
+                    <name>test</name>
+                    <Placemark id="test">
+                        <name>test</name>
+                        <LookAt>
+                            <longitude>47.52227</longitude>
+                            <latitude>-18.894523</latitude>
+                            <heading>0</heading>
+                            <tilt>0</tilt>
+                            <range>600</range>
+                        </LookAt>
+                        <styleUrl>#LastPointAlert</styleUrl>
+                        <Point>
+                            <altitudeMode>clampToGround</altitudeMode>
+                            <coordinates>47.52227,-18.894523,1378.6</coordinates>
+                        </Point>
+                        <Style>
+                            <IconStyle>
+                                <scale>2</scale>
+                                <heading>0</heading>
+                                <Icon>
+                                    <href>googleEarth/Assets/red-circle.png</href>
+                                </Icon>
+                                <hotSpot x="0.5" xunits="fraction" y="0" yunits="fraction" />
+                            </IconStyle>
+                            <LabelStyle>
+                                <color>ff0000ff</color>
+                                <scale>1</scale>
+                            </LabelStyle>
+                        </Style>
+                    </Placemark>
+                </Folder>
+            </Folder>
+        </Folder>
+    </Document>
+</kml>
