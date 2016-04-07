@@ -37,7 +37,7 @@
                         <Style>
                             <IconStyle>
                                 <scale>2</scale>
-                                <heading>360</heading>
+                                <heading>0</heading>
                                 <Icon>
                                     <href>Assets/googleEarth/red-circle.png</href>
                                 </Icon>
